@@ -8,7 +8,7 @@ const { QOUTE_API_URL } = require('../../../config');
 router.get('/qoute', async (req, res, next) => {
     try {
         const axioRes = await axios.get(QOUTE_API_URL);
-        res.send(axioRes.data);
+        res.status(200).send(axioRes.data);
     } catch (error) {
         next(`Qoute handler ${error}`)
     }

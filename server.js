@@ -28,14 +28,6 @@ app.use(qouteRoutes);
 app.use(pageNotFoundHandler);
 app.use(serverErrorHandler);
 
-// app.get('/moh',(req,res)=>{
-//     try {
-//         res.send('inside moh')
-//     } catch (error) {
-//         console.log(`error is ${error}`);
-//     }
-// })
-
 
 app.listen(port, () => {
     console.log(`server runs on ${port}`);
