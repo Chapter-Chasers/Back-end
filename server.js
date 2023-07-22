@@ -16,6 +16,8 @@ const serverErrorHandler = require('./routes/errorHandlers/500')
 
 require('dotenv').config();
 app.use(cors());
+
+
 const port = process.env.PORT;
 
 app.use(express.json())
