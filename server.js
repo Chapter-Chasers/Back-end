@@ -16,12 +16,15 @@ const serverErrorHandler = require('./routes/errorHandlers/500')
 
 require('dotenv').config();
 app.use(cors());
+
 const port = process.env.PORT;
 
 app.use(express.json())
 app.use(mainRoutes);
 app.use(bookRoutes);
 app.use(qouteRoutes);
+
+
 app.use(pageNotFoundHandler);
 app.use(serverErrorHandler);
 
