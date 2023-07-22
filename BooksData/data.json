@@ -1,0 +1,824 @@
+{
+    "kind": "books#volumes",
+    "totalItems": 621,
+    "items": [
+    {
+    "kind": "books#volume",
+    "id": "Ho1JPPbJX7QC",
+    "etag": "35yaKn+EtzU",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/Ho1JPPbJX7QC",
+    "volumeInfo": {
+    "title": "Get Lost",
+    "subtitle": "Your Guide to Finding True Love",
+    "authors": [
+    "Dannah Gresh"
+    ],
+    "publisher": "WaterBrook",
+    "publishedDate": "2013-04-02",
+    "description": "Have you ever ditched a friend for a guy? Filled your journal with more thoughts about guys than God? Found yourself jealous because that other girl gets all the dates? Maybe it’s time to get lost—in God. Discover how to get so lost in God that a guy has to seek Him to find you. Dannah Gresh traces God’s language of love through Scripture to help you pursue your heart’s deepest desires and seek love the way God designed it to be. Because once you identify your true longings and let God answer them, you’ll know just how to respond when romantic love comes along. With a guided ten-day Love Feast Challenge, Get Lost will help you see for yourself how getting lost in God opens the door to lifelong fulfillment.",
+    "industryIdentifiers": [
+    {
+    "type": "ISBN_13",
+    "identifier": "9780307730640"
+    },
+    {
+    "type": "ISBN_10",
+    "identifier": "0307730646"
+    }
+    ],
+    "readingModes": {},
+    "pageCount": 224,
+    "printType": "BOOK",
+    "categories": [
+    "Religion"
+    ],
+    "averageRating": 4.5,
+    "ratingsCount": 15,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.2.3.0.preview.2",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=Ho1JPPbJX7QC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=Ho1JPPbJX7QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.jo/books?id=Ho1JPPbJX7QC&printsec=frontcover&dq=getlost&hl=&cd=1&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=Ho1JPPbJX7QC&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Ho1JPPbJX7QC"
+    },
+    "saleInfo": {
+    "country": "JO",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+    "amount": 14.02,
+    "currencyCode": "USD"
+    },
+    "retailPrice": {
+    "amount": 14.02,
+    "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=Ho1JPPbJX7QC&rdid=book-Ho1JPPbJX7QC&rdot=1&source=gbs_api",
+    "offers": [
+    {
+    "finskyOfferType": 1,
+    "listPrice": {
+    "amountInMicros": 14020000,
+    "currencyCode": "USD"
+    },
+    "retailPrice": {
+    "amountInMicros": 14020000,
+    "currencyCode": "USD"
+    }
+    }
+    ]
+    },
+    "accessInfo": {
+    "country": "JO",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": true,
+    "acsTokenLink": "http://books.google.jo/books/download/Get_Lost-sample-epub.acsm?id=Ho1JPPbJX7QC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+    "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=Ho1JPPbJX7QC&hl=&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "Discover how to get so lost in God that a guy has to seek Him to find you. Dannah Gresh traces God’s language of love through Scripture to help you pursue your heart’s deepest desires and seek love the way God designed it to be."
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "Vdg5AAAAIAAJ",
+    "etag": "Qtc8naFwWmA",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/Vdg5AAAAIAAJ",
+    "volumeInfo": {
+    "title": "Chaos, Yet No Chance to Get Lost",
+    "subtitle": "Order and Structure in the Chaotic Dynamical Behaviour of One-dimensional Noninvertible Axiom a Mappings, Arising in Discrete Biological Models",
+    "authors": [
+    "Helena Engelina Nusse"
+    ],
+    "publishedDate": "1983",
+    "industryIdentifiers": [
+    {
+    "type": "OTHER",
+    "identifier": "UCAL:B3524220"
+    }
+    ],
+    "readingModes": {
+    "text": false,
+    "image": false
+    },
+    "pageCount": 280,
+    "printType": "BOOK",
+    "categories": [
+    "Chaotic behavior in systems"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.3.2.0.preview.0",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=Vdg5AAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=Vdg5AAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.jo/books?id=Vdg5AAAAIAAJ&q=getlost&dq=getlost&hl=&cd=2&source=gbs_api",
+    "infoLink": "http://books.google.jo/books?id=Vdg5AAAAIAAJ&dq=getlost&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Chaos_Yet_No_Chance_to_Get_Lost.html?hl=&id=Vdg5AAAAIAAJ"
+    },
+    "saleInfo": {
+    "country": "JO",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+    },
+    "accessInfo": {
+    "country": "JO",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": false
+    },
+    "pdf": {
+    "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=Vdg5AAAAIAAJ&hl=&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "i2Fz4Hj3tdwC",
+    "etag": "GSDbTpk0yUY",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/i2Fz4Hj3tdwC",
+    "volumeInfo": {
+    "title": "Our Hawaii",
+    "authors": [
+    "John W. McDermott"
+    ],
+    "publishedDate": "1985",
+    "industryIdentifiers": [
+    {
+    "type": "ISBN_10",
+    "identifier": "0912273119"
+    },
+    {
+    "type": "ISBN_13",
+    "identifier": "9780912273112"
+    }
+    ],
+    "readingModes": {
+    "text": false,
+    "image": false
+    },
+    "pageCount": 380,
+    "printType": "BOOK",
+    "categories": [
+    "Hawaii"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.4.1.0.preview.0",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=i2Fz4Hj3tdwC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=i2Fz4Hj3tdwC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.jo/books?id=i2Fz4Hj3tdwC&q=getlost&dq=getlost&hl=&cd=3&source=gbs_api",
+    "infoLink": "http://books.google.jo/books?id=i2Fz4Hj3tdwC&dq=getlost&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Our_Hawaii.html?hl=&id=i2Fz4Hj3tdwC"
+    },
+    "saleInfo": {
+    "country": "JO",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+    },
+    "accessInfo": {
+    "country": "JO",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": false
+    },
+    "pdf": {
+    "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=i2Fz4Hj3tdwC&hl=&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "gqWtoAEACAAJ",
+    "etag": "d8BEHraxQZk",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/gqWtoAEACAAJ",
+    "volumeInfo": {
+    "title": "The Don't Get Lost Out There! Deck",
+    "authors": [
+    "Mountaineers Books"
+    ],
+    "publisher": "Mountaineers Books",
+    "publishedDate": "2013-08",
+    "description": "\"Playing cards to pass the time if you're lost and to help rescue yourself, too! New addition to the wildly popular \"Don't! Decks\" series of outdoor-tips playing cards Features best wilderness navigation tips from the Mountaineers Books library of \"how-to\" information Whether you're safe at home, in a cozy tent, or on the trail, have fun with this deck while learning basic wilderness safety skills. The Don't Get Lost Out There! Deck is organized into four suits: 1. Hearts: Map & Compass. Latitude and longitude, contours, scale, magnetic declination, taking a bearing, orienting a map 2. Clubs: GPS Usage & Technology. Defining GPS, traveling with GPS, saving battery life, accuracy problems 3. Diamonds: Wilderness Travel & Route Finding. Handrails and baselines, marking the route, visualizing the return 4. Spades: Lost & Found. Why people get lost, what to do when lost, how to be found \"",
+    "industryIdentifiers": [
+    {
+    "type": "ISBN_10",
+    "identifier": "1594859132"
+    },
+    {
+    "type": "ISBN_13",
+    "identifier": "9781594859137"
+    }
+    ],
+    "readingModes": {
+    "text": false,
+    "image": false
+    },
+    "pageCount": 0,
+    "printType": "BOOK",
+    "categories": [
+    "Games & Activities"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=gqWtoAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=gqWtoAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.jo/books?id=gqWtoAEACAAJ&dq=getlost&hl=&cd=4&source=gbs_api",
+    "infoLink": "http://books.google.jo/books?id=gqWtoAEACAAJ&dq=getlost&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/The_Don_t_Get_Lost_Out_There_Deck.html?hl=&id=gqWtoAEACAAJ"
+    },
+    "saleInfo": {
+    "country": "JO",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+    },
+    "accessInfo": {
+    "country": "JO",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": false
+    },
+    "pdf": {
+    "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=gqWtoAEACAAJ&hl=&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "Decks&quot; series of outdoor-tips playing cards Features best wilderness navigation tips from the Mountaineers Books library of &quot;how-to&quot; information Whether you&#39;re safe at home, in a cozy tent, or on the trail, have fun with this deck while ..."
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "sDO3BwAAQBAJ",
+    "etag": "Mw2sAg/HEFQ",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/sDO3BwAAQBAJ",
+    "volumeInfo": {
+    "title": "You Can't Get Lost in Cape Town",
+    "authors": [
+    "Zoë Wicomb"
+    ],
+    "publisher": "The Feminist Press at CUNY",
+    "publishedDate": "2015-04-25",
+    "description": "The South African novel of identity that \"deserves a wide audience on a par with Nadine Gordimer.\"",
+    "industryIdentifiers": [
+    {
+    "type": "ISBN_13",
+    "identifier": "9781558619159"
+    },
+    {
+    "type": "ISBN_10",
+    "identifier": "1558619151"
+    }
+    ],
+    "readingModes": {
+    "text": true,
+    "image": false
+    },
+    "pageCount": 240,
+    "printType": "BOOK",
+    "categories": [
+    "Fiction"
+    ],
+    "averageRating": 3.5,
+    "ratingsCount": 3,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.3.4.0.preview.2",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=sDO3BwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=sDO3BwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.jo/books?id=sDO3BwAAQBAJ&pg=PR4&dq=getlost&hl=&cd=5&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=sDO3BwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=sDO3BwAAQBAJ"
+    },
+    "saleInfo": {
+    "country": "JO",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+    "amount": 16.99,
+    "currencyCode": "USD"
+    },
+    "retailPrice": {
+    "amount": 16.99,
+    "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=sDO3BwAAQBAJ&rdid=book-sDO3BwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+    {
+    "finskyOfferType": 1,
+    "listPrice": {
+    "amountInMicros": 16990000,
+    "currencyCode": "USD"
+    },
+    "retailPrice": {
+    "amountInMicros": 16990000,
+    "currencyCode": "USD"
+    }
+    }
+    ]
+    },
+    "accessInfo": {
+    "country": "JO",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": true,
+    "acsTokenLink": "http://books.google.jo/books/download/You_Can_t_Get_Lost_in_Cape_Town-sample-epub.acsm?id=sDO3BwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+    "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=sDO3BwAAQBAJ&hl=&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "Library of Congress Cataloging-in-Publication Data Wicomb, Zoë You can&#39;t <b>get lost</b> in Cape Town/Zoë Wicomb; historical introduction by Marcia Wright; literary afterword by Carol Sicherman.—1st Feminist Press ed. p. cm."
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "LSBGx48sFb4C",
+    "etag": "lq0lx6RwH9U",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/LSBGx48sFb4C",
+    "volumeInfo": {
+    "title": "Why People Get Lost",
+    "subtitle": "The Psychology and Neuroscience of Spatial Cognition",
+    "authors": [
+    "Paul A. Dudchenko"
+    ],
+    "publishedDate": "2010",
+    "description": "At some point in our lives, most of us have been lost. How does this happen? What are the limits of our ability to find our way? Do we have an innate sense of direction? 'How people get lost' reviews the psychology and neuroscience of navigation. It starts with a history of studies looking at how organisms solve mazes. It then reviews contemporary studies of spatial cognition, and the wayfinding abilities of adults and children. It then considers how specific parts of the brain provide a cognitive map and a neural compass. This book also considers the neurology of spatial disorientation, and the tendency of patients with Alzheimer's disease to lose their way. Within the book, the author considers that, perhaps we get lost simply because our brain's compass becomes misoriented. This book is written for anyone with an interest in navigation and the brain. It assumes no specialised knowledge of neuroscience, but covers recent advances in our understanding of how the brain represents space.",
+    "industryIdentifiers": [
+    {
+    "type": "ISBN_13",
+    "identifier": "9780199210862"
+    },
+    {
+    "type": "ISBN_10",
+    "identifier": "0199210861"
+    }
+    ],
+    "readingModes": {
+    "text": false,
+    "image": true
+    },
+    "pageCount": 313,
+    "printType": "BOOK",
+    "categories": [
+    "Language Arts & Disciplines"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.1.0.preview.1",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=LSBGx48sFb4C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=LSBGx48sFb4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.jo/books?id=LSBGx48sFb4C&pg=PP5&dq=getlost&hl=&cd=6&source=gbs_api",
+    "infoLink": "http://books.google.jo/books?id=LSBGx48sFb4C&dq=getlost&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Why_People_Get_Lost.html?hl=&id=LSBGx48sFb4C"
+    },
+    "saleInfo": {
+    "country": "JO",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+    },
+    "accessInfo": {
+    "country": "JO",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": false
+    },
+    "pdf": {
+    "isAvailable": true,
+    "acsTokenLink": "http://books.google.jo/books/download/Why_People_Get_Lost-sample-pdf.acsm?id=LSBGx48sFb4C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=LSBGx48sFb4C&hl=&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "Why People <b>Get Lost</b> The psychology and neuroscience of spatial cognition Paul A. Dudchenko, PhD Senior Lecturer Department of Psychology University of Stirling 1 1 Great Clarendon Street, Oxford OX2 6DP Oxford University Press."
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "0qtwAFtZcGMC",
+    "etag": "Lpyn9IbSTy4",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/0qtwAFtZcGMC",
+    "volumeInfo": {
+    "title": "What to Do If You Get Lost",
+    "authors": [
+    "Cynthia MacGregor"
+    ],
+    "publisher": "The Rosen Publishing Group, Inc",
+    "publishedDate": "1998-12-15",
+    "description": "Discusses the steps to follow when lost in order to get help.",
+    "industryIdentifiers": [
+    {
+    "type": "ISBN_10",
+    "identifier": "0823952509"
+    },
+    {
+    "type": "ISBN_13",
+    "identifier": "9780823952502"
+    }
+    ],
+    "readingModes": {
+    "text": false,
+    "image": true
+    },
+    "pageCount": 28,
+    "printType": "BOOK",
+    "categories": [
+    "Juvenile Nonfiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.13.9.0.preview.1",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=0qtwAFtZcGMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=0qtwAFtZcGMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.jo/books?id=0qtwAFtZcGMC&pg=PA5&dq=getlost&hl=&cd=7&source=gbs_api",
+    "infoLink": "http://books.google.jo/books?id=0qtwAFtZcGMC&dq=getlost&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/What_to_Do_If_You_Get_Lost.html?hl=&id=0qtwAFtZcGMC"
+    },
+    "saleInfo": {
+    "country": "JO",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+    },
+    "accessInfo": {
+    "country": "JO",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": false
+    },
+    "pdf": {
+    "isAvailable": true,
+    "acsTokenLink": "http://books.google.jo/books/download/What_to_Do_If_You_Get_Lost-sample-pdf.acsm?id=0qtwAFtZcGMC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=0qtwAFtZcGMC&hl=&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "Suddenly Erik realized he had run far from school . Erik was lost . He didn&#39;t know where he was or what to do . Being lost can make you feel confused and sometimes little scared . 5 Marie Gets Lost Marie thought she would never <b>get lost</b>&nbsp;..."
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "7tnLDwAAQBAJ",
+    "etag": "HKy3o+u05n0",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/7tnLDwAAQBAJ",
+    "volumeInfo": {
+    "title": "Two Tough Trucks Get Lost!",
+    "authors": [
+    "Corey Rosen Schwartz",
+    "Rebecca J. Gomez"
+    ],
+    "publisher": "Scholastic Inc.",
+    "publishedDate": "2020-09-01",
+    "description": "Join these two tough trucks on their second picture book adventure! Two tough trucks -- the fastest of friends -- love racing and chasing and zipping 'round bends. But when they chase and zip without paying attention... Mack and Rig get separated! Will they find their way back to each other, and to their parents?In this sequel to Two Tough Trucks, we join preschool vehicles on an action-packed playdate that goes a little off the rails. Kids will love imagining themselves as Mack and Rig zipping around Hilary Leung's beautiful American Southwestern landscapes, and parents will enjoy reading the easy, bouncing rhymes.Get ready to vroom and zoom your way to fun and friendship with these two lovable and tough trucks!",
+    "industryIdentifiers": [
+    {
+    "type": "ISBN_13",
+    "identifier": "9781338676143"
+    },
+    {
+    "type": "ISBN_10",
+    "identifier": "1338676148"
+    }
+    ],
+    "readingModes": {
+    "text": true,
+    "image": true
+    },
+    "pageCount": 40,
+    "printType": "BOOK",
+    "categories": [
+    "Juvenile Fiction"
+    ],
+    "averageRating": 4,
+    "ratingsCount": 1,
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.2.2.0.preview.3",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=7tnLDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=7tnLDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.jo/books?id=7tnLDwAAQBAJ&pg=PP1&dq=getlost&hl=&cd=8&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=7tnLDwAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=7tnLDwAAQBAJ"
+    },
+    "saleInfo": {
+    "country": "JO",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+    "amount": 17.99,
+    "currencyCode": "USD"
+    },
+    "retailPrice": {
+    "amount": 17.99,
+    "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=7tnLDwAAQBAJ&rdid=book-7tnLDwAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+    {
+    "finskyOfferType": 1,
+    "listPrice": {
+    "amountInMicros": 17990000,
+    "currencyCode": "USD"
+    },
+    "retailPrice": {
+    "amountInMicros": 17990000,
+    "currencyCode": "USD"
+    }
+    }
+    ]
+    },
+    "accessInfo": {
+    "country": "JO",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": true,
+    "acsTokenLink": "http://books.google.jo/books/download/Two_Tough_Trucks_Get_Lost-sample-epub.acsm?id=7tnLDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+    "isAvailable": true,
+    "acsTokenLink": "http://books.google.jo/books/download/Two_Tough_Trucks_Get_Lost-sample-pdf.acsm?id=7tnLDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=7tnLDwAAQBAJ&hl=&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "Corey Rosen Schwartz, Rebecca J. Gomez. TWO TOUGH TRUCKS <b>GET LOST</b> ! o ( ) - -. by COREY Rosen SCHWARTZ and REBECCA J. Gomez illustrated by HILARY Leung ใบ 10 . Front Cover."
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "-clgFhjflBEC",
+    "etag": "kBA4hm1pxRg",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/-clgFhjflBEC",
+    "volumeInfo": {
+    "title": "Never Get Lost Again!",
+    "authors": [
+    "Linda Grekin"
+    ],
+    "publisher": "How To Books Ltd",
+    "publishedDate": "2003",
+    "description": "Up to 25 per cent of peole have a poor sense of direction that adversely affects their lives. In this book, the author has not only produced fascinating research on the subject, she also makes suggestions on how to minimize a problem that affects so many of us.",
+    "industryIdentifiers": [
+    {
+    "type": "ISBN_10",
+    "identifier": "1857039173"
+    },
+    {
+    "type": "ISBN_13",
+    "identifier": "9781857039177"
+    }
+    ],
+    "readingModes": {
+    "text": false,
+    "image": true
+    },
+    "pageCount": 132,
+    "printType": "BOOK",
+    "categories": [
+    "Geographical perception"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.2.4.0.preview.1",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=-clgFhjflBEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=-clgFhjflBEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.jo/books?id=-clgFhjflBEC&pg=PA48&dq=getlost&hl=&cd=9&source=gbs_api",
+    "infoLink": "http://books.google.jo/books?id=-clgFhjflBEC&dq=getlost&hl=&source=gbs_api",
+    "canonicalVolumeLink": "https://books.google.com/books/about/Never_Get_Lost_Again.html?hl=&id=-clgFhjflBEC"
+    },
+    "saleInfo": {
+    "country": "JO",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+    },
+    "accessInfo": {
+    "country": "JO",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": false
+    },
+    "pdf": {
+    "isAvailable": true,
+    "acsTokenLink": "http://books.google.jo/books/download/Never_Get_Lost_Again-sample-pdf.acsm?id=-clgFhjflBEC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=-clgFhjflBEC&hl=&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "... facing the way you are going to picture the route and follow the map ? ) ; 7 , ( Can you automatically reverse directions , or do you have to write Figure 1 : Survey results 100 Percentage of individuals 80 48 / Never <b>get lost</b> again !"
+    }
+    },
+    {
+    "kind": "books#volume",
+    "id": "7bSxCAAAQBAJ",
+    "etag": "wUZwNEtvbAg",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/7bSxCAAAQBAJ",
+    "volumeInfo": {
+    "title": "So You Don't Get Lost in the Neighbourhood",
+    "authors": [
+    "Patrick Modiano"
+    ],
+    "publisher": "Hachette UK",
+    "publishedDate": "2015-09-03",
+    "description": "Jean Daragane, writer and recluse, has purposely built a life of seclusion away from the Parisian bustle. He doesn't see many people, he rarely goes out: he spends his life in a solitary world of his own making. His peace is shattered however, one hot September afternoon, by a threatening phone call from a complete stranger, who claims to have found Daragane's old phone book and wants to question him about a particular name it contains. But when Daragane agrees to meet the mysterious Gilles Ottolini, he realises that - try as he might - he cannot place the name \"Guy Torstel\" at all. Yet Ottolini is desperate for any information on this man... Finding himself suddenly entangled in the lives of Ottolini and his beautiful, but fragile young associate, Daragane is drawn into the mystery of a decades-old murder that will drag him out of his lonely apartment and force him to confront the memory of a long-suppressed personal trauma. Imbued with nostalgia, subtlety, and its own unique poetry, this darkly mysterious novel weaves a spell that provokes as much as it entrances.",
+    "industryIdentifiers": [
+    {
+    "type": "ISBN_13",
+    "identifier": "9780857054951"
+    },
+    {
+    "type": "ISBN_10",
+    "identifier": "0857054953"
+    }
+    ],
+    "readingModes": {
+    "text": true,
+    "image": false
+    },
+    "pageCount": 160,
+    "printType": "BOOK",
+    "categories": [
+    "Fiction"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": true,
+    "contentVersion": "1.1.2.0.preview.2",
+    "panelizationSummary": {
+    "containsEpubBubbles": false,
+    "containsImageBubbles": false
+    },
+    "imageLinks": {
+    "smallThumbnail": "http://books.google.com/books/content?id=7bSxCAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+    "thumbnail": "http://books.google.com/books/content?id=7bSxCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.jo/books?id=7bSxCAAAQBAJ&pg=PT74&dq=getlost&hl=&cd=10&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=7bSxCAAAQBAJ&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=7bSxCAAAQBAJ"
+    },
+    "saleInfo": {
+    "country": "JO",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+    "amount": 10.99,
+    "currencyCode": "USD"
+    },
+    "retailPrice": {
+    "amount": 10.99,
+    "currencyCode": "USD"
+    },
+    "buyLink": "https://play.google.com/store/books/details?id=7bSxCAAAQBAJ&rdid=book-7bSxCAAAQBAJ&rdot=1&source=gbs_api",
+    "offers": [
+    {
+    "finskyOfferType": 1,
+    "listPrice": {
+    "amountInMicros": 10990000,
+    "currencyCode": "USD"
+    },
+    "retailPrice": {
+    "amountInMicros": 10990000,
+    "currencyCode": "USD"
+    }
+    }
+    ]
+    },
+    "accessInfo": {
+    "country": "JO",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+    "isAvailable": true,
+    "acsTokenLink": "http://books.google.jo/books/download/So_You_Don_t_Get_Lost_in_the_Neighbourho-sample-epub.acsm?id=7bSxCAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "pdf": {
+    "isAvailable": false
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=7bSxCAAAQBAJ&hl=&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+    },
+    "searchInfo": {
+    "textSnippet": "It was difficult for him to write after a bad night. In his drowsiness, he could hear Annie&#39;s voice, more and more distant, and all he could understand was the end of a sentence: “... SO YOU DON&#39;T <b>GET LOST</b> IN THE NEIGHBOURHOOD ."
+    }
+    }
+    ]
+    }
