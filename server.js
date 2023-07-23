@@ -14,10 +14,9 @@ const qouteRoutes = require('./routes/api_routes/qoute_generator/api');
 const pageNotFoundHandler = require('./routes/errorHandlers/404')
 const serverErrorHandler = require('./routes/errorHandlers/500')
 
-require('dotenv').config();
 app.use(cors());
 
-const port = process.env.PORT;
+const {PORT} = require('./config');
 
 app.use(express.json())
 app.use(mainRoutes);
@@ -29,6 +28,6 @@ app.use(pageNotFoundHandler);
 app.use(serverErrorHandler);
 
 
-app.listen(port, () => {
-    console.log(`server runs on ${port}`);
+app.listen(PORT, () => {
+    console.log(`server runs on ${PORT}`);
 })
