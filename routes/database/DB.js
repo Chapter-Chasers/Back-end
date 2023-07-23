@@ -11,7 +11,7 @@ router.get ('/getbooks',(req,res,next)=>{
     clint.query(sql).then((data)=>{
         res.status(200).send(data.rows);
 
-    }) 
+    }).catch((e)=> next("something went wrong" + e)); 
     }
     catch(e){
         next(`Can't Get Books :( ${e}`);
@@ -32,7 +32,7 @@ router.post("/addbook",(req, res ,next) => {
   let yo = 'INSERT INTO table_one (title, image, description ,rating ,price,author,category) VALUES ($1, $2, $3, $4, $5, $6, $7)';
   clint.query(yo, [title, image, description ,rating ,price,author,category]).then(() => {
         res.status(201).send('book added succcful :)');
-      });
+      }).catch((e)=> next("something went wrong" + e));
    
   res.send(req.body);
   }
@@ -59,7 +59,6 @@ router.delete("/delete/:id", async (req, res) => {
       let {id} = req.params;
     //   let title=req.body.title; 
     //   let image=req.body.image;
-      let description=req.body.description;//, image, description ,rating ,price,author,category
       let rating=req.body.rating; //, image=2, description=$3 ,rating=$4,price=$5,author=$6,category=$7 WHERE
     //   let price=req.body.price;
     //   let author=req.body.author;
@@ -67,7 +66,7 @@ router.delete("/delete/:id", async (req, res) => {
       let sql =  `UPDATE table_one SET rating=$1 Where id=${id}`;
       clint.query(sql,[rating ]).then(() => {
         res.status(200).send("updated successfully");
-      });
+      }).catch((e)=> next("something went wrong" + e));
     }
     catch (e) {
         next("something went wrong" + e);
