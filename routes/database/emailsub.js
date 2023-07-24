@@ -11,7 +11,7 @@ async function getquotes(){
     const res= await axios.get(url) ;
     return res.data.content;    
 } 
-const quote = getquotes();
+
 
 let arremail = [];
 console.log(arremail);
@@ -22,12 +22,13 @@ const transporter = nodemailer.createTransport({
     pass: 'ltwdamtoadkfzmvf'
   },
 });
-const sendDailyEmail = (transporter) => {
+const sendDailyEmail = async (transporter) => {
+  const qoute = await getquotes()
   const mailOptions = {
     from: 'chapterchasers4@gmail.com',
     to: arremail,
     subject: 'YOUR Quotes',
-    text: `This is your daily email! ${quote}`,
+    text: `This is your daily email! ${qoute}`,
   };
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
@@ -43,7 +44,8 @@ cron.schedule('0 12 * * *', () => {
 });
 
 
-router.post('/subscribe', (req, res) => {
+router.post('/subscribe', async (req, res) => {
+  const quote = await getquotes();
   const {email} = req.body;
     arremail.push(email);
   const mailOptions = {
