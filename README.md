@@ -19,11 +19,11 @@ run this on your terminal **`nodemon server.js or npm server.js`** you should se
 ## Endpoints
 
 - `/allBooks` a get method to fetch a list of books .
-
 - `/search` a get method that search for a book basedon it's title or on isbn .
   - to search for title provide the body with a json format `"title":"Harry Potter"` .
   - to get a book based on isbn use the query `isbn` .
 - `/searchAuthor` a get method to search for an author using query `author` .
 - `/searchCategory` a get method to search for a category using query `cat` .
-
+- `/search/:id` get method to search for a book based on his id.
 - `/quote` a get method to get a random quote .
+- `/subscribe` get method to subscribe for the newsletter .
