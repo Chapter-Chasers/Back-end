@@ -22,7 +22,7 @@ router.get('/allBooks', async (req, res, next) => {
 //localhost:3000/search?search=bookName
 router.get('/search', async (req, res, next) => {
     try {
-        const bookName = req.body.title || req.query.isbn;
+        const bookName = req.query.title || req.query.isbn;
         const axiosResponse = await axios.get(`${BOOKS_API_URL + encodeURIComponent(bookName)}`)
         res.status(200).send(axiosResponse.data)
 
