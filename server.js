@@ -9,10 +9,10 @@ const DB_routes = require('./routes/database/DB')
 const bookRoutes = require('./routes/api_routes/booksApi/book.routes');
 
 const qouteRoutes = require('./routes/api_routes/qoute_generator/api');
-const emailRoute = require('./routes/database/emailsub')
-
-const pageNotFoundHandler = require('./routes/errorHandlers/404')
-const serverErrorHandler = require('./routes/errorHandlers/500')
+const emailRoute = require('./routes/database/emailsub');
+const quoteRoutesPage = require('./routes/api_routes/quotesApi/quotes.routes');
+const pageNotFoundHandler = require('./routes/errorHandlers/404');
+const serverErrorHandler = require('./routes/errorHandlers/500');
 
 app.use(cors());
 
@@ -24,6 +24,8 @@ app.use(bookRoutes);
 app.use(qouteRoutes);
 app.use(DB_routes);
 app.use(emailRoute);
+app.use(quoteRoutesPage);
+
 
 app.use(pageNotFoundHandler);
 app.use(serverErrorHandler);
