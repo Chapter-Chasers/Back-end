@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     try {
-        console.log(`inside /`);
+        // console.log(`inside /`);
         res.send('Hello');
     } catch (error) {
         console.log(`error is ${error}`);
