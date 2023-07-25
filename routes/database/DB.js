@@ -23,19 +23,19 @@ router.get ('/getbooks',(req,res,next)=>{
 router.post("/addbook",(req, res ,next) => {
     try{
   console.log("yout home");
-  let title=req.body.title; 
-  let image=req.body.image;
-  let description=req.body.description;
-  let rating=req.body.rating;
-  let price=req.body.price;
-  let author=req.body.author;
-  let category=req.body.category;
-  let yo = 'INSERT INTO table_one (title, image, description ,rating ,price,author,category) VALUES ($1, $2, $3, $4, $5, $6, $7)';
-  clint.query(yo, [title, image, description ,rating ,price,author,category]).then(() => {
+  const title=req.body.title; 
+  const image=req.body.image;
+  const description=req.body.description;
+  const rating=req.body.rating;
+  const price=req.body.price;
+  const author=req.body.author;
+  const category=req.body.category;
+  const sql = 'INSERT INTO table_one (title, image, description ,rating ,price,author,category) VALUES ($1, $2, $3, $4, $5, $6, $7)';
+  clint.query(sql, [title, image, description ,rating ,price,author,category]).then(() => {
         res.status(201).send('book added succcful :)');
       }).catch((e)=> next("something went wrong" + e));
    
-  res.send(req.body);
+  // res.send(req.body);
   }
 catch(e){
 next(`${e}`);
