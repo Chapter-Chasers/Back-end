@@ -31,6 +31,7 @@ router.post("/addbook", (req, res, next) => {
     const price = req.body.price;
     const author = req.body.author;
     const category = req.body.category;
+    const state = req.body.state;
     const sql = 'INSERT INTO table_one (title, image, description ,rating ,price,author,category,state) VALUES ($1, $2, $3, $4, $5, $6, $7 ,$8)';
     clint.query(sql, [title, image, description, rating, price, author, category ,state]).then(() => {
       res.status(201).send('book added succcful :)');
