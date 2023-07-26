@@ -23,24 +23,65 @@ router.get('/getbooks', (req, res, next) => {
 router.post("/addbook", (req, res, next) => {
   try {
     console.log("yout home");
-    let title = req.body.title;
-    let image = req.body.image;
-    let description = req.body.description;
-    let rating = req.body.rating;
-    let price = req.body.price;
-    let author = req.body.author;
-    let category = req.body.category;
-    let yo = 'INSERT INTO table_one (title, image, description ,rating ,price,author,category) VALUES ($1, $2, $3, $4, $5, $6, $7)';
-    clint.query(yo, [title, image, description, rating, price, author, category]).then(() => {
+    const title = req.body.title;
+    const image = req.body.image;
+    const description = req.body.description;
+    const rating = req.body.rating;
+    const price = req.body.price;
+    const author = req.body.author;
+    const category = req.body.category;
+    const sql = 'INSERT INTO table_one (title, image, description ,rating ,price,author,category) VALUES ($1, $2, $3, $4, $5, $6, $7)';
+    clint.query(sql, [title, image, description, rating, price, author, category]).then(() => {
       res.status(201).send('book added succcful :)');
     }).catch((e) => next("something went wrong" + e));
 
-    res.send(req.body);
+    // res.send(req.body);
   }
   catch (e) {
     next(`${e}`);
   }
 });
+
+router.post('/user', (req, res, next) => {
+  try {
+    const { name, email, id } = req.body;
+    // check if users is exist
+    const sql = "select * from users where user_id = $1"
+    clint.query(sql, [id]).then((data) => {
+      console.log(data.rowCount);
+      if (data.rowCount > 0) {
+        res.status(200).send("user Exist");
+      }
+      else {
+        const sql2 = "insert into users (user_id , username , email ) values ($1 , $2 ,$3)";
+        clint.query(sql2, [id, name, email]).then(() => {
+          res.status(201).send('user Added Succesffully')
+        }).catch((e) => {
+          next(`error in adding user ${e}`);
+        })
+      }
+    }).catch((e) => {
+      next(`this is not allowed ${e}`)
+    })
+  } catch (error) {
+    next(`out of scoupe ${error}`)
+  }
+
+})
+
+
+router.get("/getBook/:state", async (req, res) => {
+  try {
+    let { state } = req.params;
+    let sql = `SELECT * from table_one WHERE state = $1`;
+    clint.query(sql, [state]).then((data) => {
+      res.status(200).send(data.rows)
+    }).catch((e) => next("something went wrong" + e));
+  }
+  catch (e) {
+    next(`Can't Get Books :( ${e}`);
+  }
+})
 
 
 
@@ -55,19 +96,20 @@ router.delete("/delete/:id", async (req, res) => {
     next("deletebook " + e);
   }
 });
-router.get("/getBook/:state", async (req, res) => {
+router.put('/update/:state/:id', (req, res, next) => {
   try {
-    let { state } = req.params;
-    let sql = `SELECT * from table_one WHERE state = $1`;
-    clint.query(sql, [state]).then((data) => {
-      res.status(200).send(data.rows)
-    }).catch((e) => next("something went wrong" + e));
-  }
-  catch (e) {
-    next(`Can't Get Books :( ${e}`);
+    const { id, state } = req.params;
+    const sql = `update table_one set state = $2 where id = $1`;
+    clint.query(sql, [id, state]).then(() => {
+      res.status(202).send(`updated Successfully`)
+    }).catch((e) => {
+      next(`Error on updating ${e}`)
+    })
+  } catch (error) {
+    next(`Error in server ${error}`);
   }
 })
-router.put("/UPDATE/:id", (req, res, next) => {
+router.put("/update/:id", (req, res, next) => {
   try {
     console.log("asd");
     let { id } = req.params;
