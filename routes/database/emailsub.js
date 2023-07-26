@@ -31,7 +31,29 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+///////////////////
+app.post('/send-feedback', (req, res) => {
+  const { name , message } = req.body;
+  const mailOptions = {
+    from: "",
+    to: 'chapterchasers4@gmail.com',
+    subject: 'Feedback Form Submission',
+    html: `<h1> \nFrom: ${name}\n\nMessage:\n${message} </h1> `
+  };
 
+  // Sending the email
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error('Error:', error);
+      res.json({ message: 'An error occurred while sending the email.' });
+    } else {
+      console.log('Email sent:', info.response);
+      res.json({ message: 'Thank you for your feedback!' });
+    }
+  });
+});
+
+////////////////////
 
 const sendDailyEmail = async (transporter) => {
   router.get( "/get",  (req, res) => {
