@@ -31,8 +31,8 @@ router.post("/addbook", (req, res, next) => {
     const price = req.body.price;
     const author = req.body.author;
     const category = req.body.category;
-    const sql = 'INSERT INTO table_one (title, image, description ,rating ,price,author,category) VALUES ($1, $2, $3, $4, $5, $6, $7)';
-    clint.query(sql, [title, image, description, rating, price, author, category]).then(() => {
+    const sql = 'INSERT INTO table_one (title, image, description ,rating ,price,author,category,state) VALUES ($1, $2, $3, $4, $5, $6, $7 ,$8)';
+    clint.query(sql, [title, image, description, rating, price, author, category ,state]).then(() => {
       res.status(201).send('book added succcful :)');
     }).catch((e) => next("something went wrong" + e));
 
@@ -42,6 +42,48 @@ router.post("/addbook", (req, res, next) => {
     next(`${e}`);
   }
 });
+
+router.post('/user', (req, res, next) => {
+  try {
+    const { name, email, id } = req.body;
+    // check if users is exist
+    const sql = "select * from users where user_id = $1"
+    clint.query(sql, [id]).then((data) => {
+      console.log(data.rowCount);
+      if (data.rowCount > 0) {
+        res.status(200).send("user Exist");
+      }
+      else {
+        const sql2 = "insert into users (user_id , username , email ) values ($1 , $2 ,$3)";
+        clint.query(sql2, [id, name, email]).then(() => {
+          res.status(201).send('user Added Succesffully')
+        }).catch((e) => {
+          next(`error in adding user ${e}`);
+        })
+      }
+    }).catch((e) => {
+      next(`this is not allowed ${e}`)
+    })
+  } catch (error) {
+    next(`out of scoupe ${error}`)
+  }
+
+})
+
+
+router.get("/getBook/:state", async (req, res) => {
+  try {
+    let { state } = req.params;
+    let sql = `SELECT * from table_one WHERE state = $1`;
+    clint.query(sql, [state]).then((data) => {
+      res.status(200).send(data.rows)
+    }).catch((e) => next("something went wrong" + e));
+  }
+  catch (e) {
+    next(`Can't Get Books :( ${e}`);
+  }
+})
+
 
 
 router.delete("/delete/:id", async (req, res) => {
