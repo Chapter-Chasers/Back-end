@@ -72,10 +72,11 @@ router.post('/user', (req, res, next) => {
 })
 
 
-router.get("/getBook/:state", async (req, res) => {
+router.get("/getBook/:state", async (req, res,next) => {
   try {
     let { state } = req.params;
-    let sql = `SELECT * from table_one WHERE state = ${state}`;
+    let sql = `SELECT * from table_one WHERE state = $1`;
+    console.log('im in state');
     clint.query(sql, [state]).then((data) => {
       res.status(200).send(data.rows)
     }).catch((e) => next("something went wrong" + e));
