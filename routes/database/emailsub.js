@@ -13,16 +13,16 @@ const clint = require('../../clint');
 
 const axios = require("axios");
 
-async function getquotes(){
-    const url=`https://chasers-back.onrender.com/quote`;
-    const res= await axios.get(url) ;
-    return res.data.content;    
-} 
+async function getquotes() {
+  const url = `https://chasers-back.onrender.com/quote`;
+  const res = await axios.get(url);
+  return res.data.content;
+}
 ///const qoute = await getquotes()
 
 
 let emailarr = new Array();
- let emailarr2 = new Array();
+let emailarr2 = new Array();
 const transporter = nodemailer.createTransport({
   service: 'gmail', // e.g., 'gmail'
   auth: {
@@ -33,7 +33,7 @@ const transporter = nodemailer.createTransport({
 
 ///////////////////
 router.post('/send-feedback', (req, res) => {
-  const { name , message } = req.body;
+  const { name, message } = req.body;
   const mailOptions = {
     from: "",
     to: 'chapterchasers4@gmail.com',
@@ -56,26 +56,26 @@ router.post('/send-feedback', (req, res) => {
 ////////////////////
 
 const sendDailyEmail = async (transporter) => {
-  router.get( "/get",  (req, res) => {
+  router.get("/get", (req, res) => {
     let sql = `SELECT email FROM emails`;
     clint.query(sql).then((emaildata) => {
       res.status(200).send(emaildata.rows);
       emailarr.push(emaildata.rows);
-      emailarr[0].map((e)=>{
+      emailarr[0].map((e) => {
         emailarr2.push(e.email);
       })
       console.log("we are inside");
     });
   });
   const serverUrl = 'http://localhost:3002/get';
- axios.get(serverUrl)
-  .then((response) => {
-    console.log('Response from server:', response.data);
-    // Do something with the response data here
-  })
-  .catch((error) => {
-    console.error('Error making GET request:');
-  });
+  axios.get(serverUrl)
+    .then((response) => {
+      console.log('Response from server:', response.data);
+      // Do something with the response data here
+    })
+    .catch((error) => {
+      console.error('Error making GET request:');
+    });
   // console.log('Error making GET request:' + emailarr2);
   const qoute = await getquotes()
   const mailOptions = {
@@ -95,39 +95,45 @@ const sendDailyEmail = async (transporter) => {
 //0 12 * * *
 //'*/20 * * * * *'
 cron.schedule('0 12 * * *', () => {
- try{ sendDailyEmail(transporter);}
- catch(e){console.log(e)};
+  try { sendDailyEmail(transporter); }
+  catch (e) { console.log(e) };
 });
 
 
-let ee;
-let na;
-router.post('/subscribe',  (req, res) => {
-  const {name} = req.body;
-  const {email} = req.body;
-  ee=email;
-  na=name;
-  let yo = 'INSERT INTO emails ( names, email) VALUES ($1, $2)';
-  clint.query(yo, [name,email]).then(() => {
-        res.status(201);
+router.post('/subscribe', (req, res) => {
+  const { name, email } = req.body;
+
+  // Perform proper error handling for database query
+  const query = 'INSERT INTO emails (name, email) VALUES ($1, $2)';
+  clint
+    .query(query, [name, email])
+    .then(() => {
+      // Database query success
+      console.log(email);
+      const mailOptions = {
+        from: 'chapterchasers4@gmail.com',
+        to: email,
+        subject: 'Subscription Successful',
+        text: `Thank you ${name}! You are now subscribed to our newsletter!`,
+      };
+
+      // Ensure that the transporter is defined and initialized before using it
+      transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+          console.log(error);
+          res.status(500).send('An error occurred while sending the email.');
+        } else {
+          console.log('Email sent: ' + info.response);
+          res.status(201).send('Subscription successful! Check your email.');
+        }
       });
-  const mailOptions = {
-    from: 'chapterchasers4@gmail.com',
-    to: ee,
-    subject: 'Subscription Successful',
-    text: `Thank you ${na} You are now subscribed to our newsletter!`,
-  };
-
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
+    })
+    .catch((error) => {
       console.log(error);
-      res.status(500).send('An error occurred while sending the email.');
-    } else {
-      console.log('Email sent: ' + info.response);
-      res.send('Subscription successful! Check your email.');
-    }
-  });
+      res.status(500).send('An error occurred while processing the request.');
+    });
 });
 
 
-module.exports=router;
+
+module.exports = router;
