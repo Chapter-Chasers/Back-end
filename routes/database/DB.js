@@ -42,6 +42,19 @@ router.post("/addbook", (req, res, next) => {
   }
 });
 
+router.get("/getBook/:state", async (req, res) => {
+  try {
+    let { state } = req.params;
+    let sql = `SELECT * from table_one WHERE state = $1`;
+    clint.query(sql,[state]).then((data) => {
+      res.status(200).send(data.rows)
+    }).catch((e) => next("something went wrong" + e));
+  }
+  catch (e) {
+    next(`Can't Get Books :( ${e}`);
+  }
+})
+
 
 router.delete("/delete/:id", async (req, res) => {
   try {
