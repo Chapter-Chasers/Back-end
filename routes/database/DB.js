@@ -76,7 +76,7 @@ router.get("/getBook/:state", async (req, res,next) => {
   try {
     const { state  } = req.params;
     const sql = `SELECT * from table_one WHERE state = $1`;
-    clint.query(sql, [state,id]).then((data) => {
+    clint.query(sql, [state]).then((data) => {
       res.status(200).send(data.rows)
     }).catch((e) => next("something went wrong" + e));
   }
