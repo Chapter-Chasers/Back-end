@@ -74,8 +74,8 @@ router.post('/user', (req, res, next) => {
 
 router.get("/getBook/:state/:id", async (req, res,next) => {
   try {
-    let { state ,id } = req.params;
-    let sql = `SELECT * from table_one WHERE state = $1 AND user_id = $2`;
+    const { state ,id } = req.params;
+    const sql = `SELECT * from table_one WHERE state = $1 AND user_id = $2`;
     clint.query(sql, [state,id]).then((data) => {
       res.status(200).send(data.rows)
     }).catch((e) => next("something went wrong" + e));
