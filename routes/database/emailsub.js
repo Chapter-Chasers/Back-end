@@ -33,12 +33,12 @@ const transporter = nodemailer.createTransport({
 
 ///////////////////
 router.post('/send-feedback', (req, res) => {
-  const { name, message } = req.body;
+  const { email, message } = req.body;
   const mailOptions = {
-    from: "",
+    from: email,
     to: 'chapterchasers4@gmail.com',
     subject: 'Feedback Form Submission',
-    html: `<h1> \nFrom: ${name}\n\nMessage:\n${message} </h1> `
+    html: `<h1> \nFrom: ${email}\n\nMessage:\n${message} </h1> `
   };
 
   // Sending the email
@@ -55,48 +55,29 @@ router.post('/send-feedback', (req, res) => {
 
 ////////////////////
 
-const sendDailyEmail = async (transporter) => {
-  router.get("/get", (req, res) => {
-    let sql = `SELECT email FROM emails`;
-    clint.query(sql).then((emaildata) => {
-      res.status(200).send(emaildata.rows);
-      emailarr.push(emaildata.rows);
-      emailarr[0].map((e) => {
-        emailarr2.push(e.email);
-      })
-      console.log("we are inside");
-    });
-  });
-  const serverUrl = 'http://localhost:3002/get';
-  axios.get(serverUrl)
-    .then((response) => {
-      console.log('Response from server:', response.data);
-      // Do something with the response data here
-    })
-    .catch((error) => {
-      console.error('Error making GET request:');
-    });
-  // console.log('Error making GET request:' + emailarr2);
-  const qoute = await getquotes()
-  const mailOptions = {
-    from: 'chapterchasers4@gmail.com',
-    to: emailarr2,
-    subject: 'YOUR Quotes',
-    text: `This is your daily email! Your qoute is  ${qoute} `,
-  };
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log('Daily email sent: ' + info.response);
-    }
-  });
+const sendDailyEmail = async () => {
+  try {
+    const emailData = await clint.query('SELECT email FROM emails');
+    const emailList = emailData.rows.map((row) => row.email);
+    const quote = await getquotes();
+
+
+    const mailOptions = {
+      from: 'chapterchasers4@gmail.com',
+      to: emailList.join(','),
+      subject: 'YOUR Quotes',
+      text: `This is your daily email! Your quote is: ${quote}`,
+    };
+
+
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Daily email sent:', info.response);
+  } catch (error) {
+    console.error('Error sending daily email:', error);
+  }
 };
-//0 12 * * *
-//'*/20 * * * * *'
 cron.schedule('0 12 * * *', () => {
-  try { sendDailyEmail(transporter); }
-  catch (e) { console.log(e) };
+  sendDailyEmail();
 });
 
 
