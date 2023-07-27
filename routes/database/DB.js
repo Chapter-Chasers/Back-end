@@ -23,7 +23,6 @@ router.get('/getbooks', (req, res, next) => {
 })
 router.post("/addbook", (req, res, next) => {
   try {
-    console.log("yout home");
     const title = req.body.title;
     const image = req.body.image;
     const description = req.body.description;
@@ -32,8 +31,9 @@ router.post("/addbook", (req, res, next) => {
     const author = req.body.author;
     const category = req.body.category;
     const state = req.body.state;
-    const sql = 'INSERT INTO table_one (title, image, description ,rating ,price,author,category,state) VALUES ($1, $2, $3, $4, $5, $6, $7 ,$8)';
-    clint.query(sql, [title, image, description, rating, price, author, category ,state]).then(() => {
+    const user_id = req.body.id
+    const sql = 'INSERT INTO table_one (title, image, description ,rating ,price,author,category,state,user_id) VALUES ($1, $2, $3, $4, $5, $6, $7 ,$8,$9)';
+    clint.query(sql, [title, image, description, rating, price, author, category ,state,user_id]).then(() => {
       res.status(201).send('book added succcful :)');
     }).catch((e) => next("something went wrong" + e));
 
