@@ -72,7 +72,7 @@ router.post('/user', (req, res, next) => {
 })
 
 
-router.get("/getBook/:state", async (req, res) => {
+router.get("/getBook/:state", async (req, res,next) => {
   try {
     let { state ,id } = req.params;
     let sql = `SELECT * from table_one WHERE state = $1 AND user_id = $2`;

@@ -104,7 +104,7 @@ router.post('/subscribe', (req, res) => {
   const { name, email } = req.body;
 
   // Perform proper error handling for database query
-  const query = 'INSERT INTO emails (name, email) VALUES ($1, $2)';
+  const query = 'INSERT INTO emails (names, email) VALUES ($1, $2)';
   clint
     .query(query, [name, email])
     .then(() => {
