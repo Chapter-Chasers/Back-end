@@ -7,7 +7,8 @@
     "node-cron": "^3.0.2",
     "nodemailer": "^6.9.4",
     "nodemon": "^3.0.1",
-    "pg": "^8.11.1"
+    "pg": "^8.11.1",
+    "pg-native": "^3.0.1"
   },
   "name": "back-end",
   "description": "",
