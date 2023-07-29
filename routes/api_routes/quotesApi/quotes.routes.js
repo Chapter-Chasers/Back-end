@@ -18,5 +18,21 @@ router.get('/allQuotes', async (req, res) => {
       }
   });
 
+  router.post('/addQuotes', async (req, res) => {
+    try {
+      const id= req.body.id;
+      const author = req.body.author;
+      const quote = req.body.quote;
+       const sql= 'INSERT INTO quotes(userId,author,quote) VALUES ($1,$2,$3) ';
+       clint.query(sql, [id,author,quote]).then(() => {
+        res.status(201).send('quote added succcfuly :)'); 
+      }).catch((error) => next("something went wrong" + error));
+
+      } catch (error) {
+       next(error)
+      }
+  });
+
+
 
 module.exports = router;
