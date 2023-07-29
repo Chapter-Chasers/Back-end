@@ -39,8 +39,8 @@ router.get('/getUserQuote/:id', async(req,res,next) =>{
   try {
     const sql ="SELECT * FROM quotes where userId=$1";
     const id = req.params.id;
-    client.query(sql,[id]).then(() => {
-      res.status(200).send("sucess");
+    client.query(sql,[id]).then((data) => {
+      res.status(200).send(data.rows);
     }).catch((e) => {
       next(`error is ${e}`);
     });
