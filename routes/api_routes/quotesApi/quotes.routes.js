@@ -35,6 +35,41 @@ router.post('/addQuotes', async (req, res, next) => {
   }
 });
 
+router.get('/getUserQuote/:id', async(req,res,next) =>{
+  try {
+    const sql ="SELECT * FROM quotes where userId=$1";
+    const id = req.params.id;
+    client.query(sql,[id]).then(() => {
+      res.status(200).send("sucess");
+    }).catch((e) => {
+      next(`error is ${e}`);
+    });
+    
+  } catch (error) {
+    console.error('Error fetching quotes:', error);
+    res.status(500).json({ error: 'An error occurred while fetching quotes.' });
+    
+  }
+ 
+
+})
+
+
+router.delete('/deleteQuote/:id', async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    let sql = `DELETE FROM quotes WHERE id = ${id}`;
+    client.query(sql).then(() => {
+      res.status(201).send("deleted successfully");
+    }).catch((e) => {
+      next(`error is ${e}`);
+    });
+  } catch (error) {
+    console.error('Error fetching quotes:', error);
+    res.status(500).json({ error: 'An error occurred while fetching quotes.' });
+  }
+});
+
 
 
 module.exports = router;
