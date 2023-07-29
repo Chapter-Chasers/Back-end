@@ -18,7 +18,7 @@ router.get('/allQuotes', async (req, res) => {
       }
   });
 
-  router.post('/addQuotes', async (req, res) => {
+  router.post('/addQuotes', async (req, res, next) => {
     try {
       const id= req.body.id;
       const author = req.body.author;
