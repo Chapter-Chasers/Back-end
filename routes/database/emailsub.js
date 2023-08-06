@@ -32,7 +32,7 @@ const transporter = nodemailer.createTransport({
 });
 
 ///////////////////
-app.post('/send-feedback', (req, res) => {
+router.post('/send-feedback', (req, res) => {
   const { name , message } = req.body;
   const mailOptions = {
     from: "",
